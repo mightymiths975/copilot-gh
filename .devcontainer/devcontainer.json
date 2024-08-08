@@ -1,0 +1,16 @@
+{
+    "name": "Python Flask Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+    "extensions": [
+        "GitHub.copilot",
+        "ms-vscode.vscode-typescript-next",
+        "ms-vscode.vscode-typescript-next",
+        "ms-vscode.vscode-chat"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace"
+}
